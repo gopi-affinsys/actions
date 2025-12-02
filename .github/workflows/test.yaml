@@ -13,6 +13,7 @@ jobs:
       - name: install apache
         run: apt install apache2 -y
       - name: bye
-        echo: echo "byeeeeeeeeeeeee"
+        run: echo "byeeeeeeeeeeeee"
+
 
 
