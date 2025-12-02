@@ -15,6 +15,7 @@ jobs:
       - name: bye
         run: echo "byeeeeeeeeeeeee"
   second:
+    needs: first
     runs-on: ubuntu-latest
     steps:
       - name: second
