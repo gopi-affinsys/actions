@@ -9,11 +9,12 @@ jobs:
       - name: echo hello world
         run: echo "hello world"
       - name: update packages
-        run: apt update 
+        run: sudo apt update 
       - name: install apache
-        run: apt install apache2 -y
+        run: sudo apt install apache2 -y
       - name: bye
         run: echo "byeeeeeeeeeeeee"
+
 
 
 
