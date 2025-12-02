@@ -12,6 +12,8 @@ jobs:
         run: sudo apt update 
       - name: install apache
         run: sudo apt install apache2 -y
+      - name: test
+        run: echo "$(hashFiles('**/*.yaml'))"
       - name: bye
         run: echo "byeeeeeeeeeeeee"
   second:
