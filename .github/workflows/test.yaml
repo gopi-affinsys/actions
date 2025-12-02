@@ -14,7 +14,10 @@ jobs:
         run: sudo apt install apache2 -y
       - name: bye
         run: echo "byeeeeeeeeeeeee"
-
-
+    second:
+      runs-on: ubuntu-latest
+      steps:
+        - name: second
+          run: echo "hello world from second job, first job is completed"
 
 
