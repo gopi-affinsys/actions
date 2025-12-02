@@ -10,8 +10,6 @@ jobs:
         run: echo "hello world"
       - name: update packages
         run: sudo apt update 
-      - name: install apache
-        run: sudo apt install apache2 -y
       - name: bye
         run: echo "byeeeeeeeeeeeee"
   second:
