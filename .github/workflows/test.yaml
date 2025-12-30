@@ -7,7 +7,9 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: echo hello world
-        run: echo "hello world"
+        run: echo "hello world" && ls -ltra
+      - name: git status
+        run: git status
       - name: update packages
         run: sudo apt update 
       - name: bye
@@ -18,4 +20,5 @@ jobs:
     steps:
       - name: second
         run: echo "hello world from second job, first job is completed"
+
 
