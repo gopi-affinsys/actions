@@ -4,7 +4,7 @@ on:
 
 jobs:
   first:
-    runs-on: self-hosted
+    runs-on: ubuntu
     steps:
       - name: echo hello world
         run: echo "hello world" && ls -ltra
@@ -20,5 +20,6 @@ jobs:
     steps:
       - name: second
         run: echo "hello world from second job, first job is completed"
+
 
 
