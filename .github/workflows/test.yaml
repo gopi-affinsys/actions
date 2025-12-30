@@ -1,6 +1,6 @@
 on:
   push:
-    branches: ["main"]
+    branches: ["main"] 
 
 jobs:
   first:
@@ -20,6 +20,7 @@ jobs:
     steps:
       - name: second
         run: echo "hello world from second job, first job is completed"
+
 
 
 
